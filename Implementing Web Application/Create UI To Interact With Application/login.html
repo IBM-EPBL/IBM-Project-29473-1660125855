@@ -1,0 +1,171 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags --
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS --
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <title>Login</title>
+  </head>
+  <body style="background-color: rgb(64, 148, 197);">
+    <nav style="background-color: rgba(24, 64, 151, 0.9);" class="navbar navbar-expand-lg navbar-dark">
+    </nav>
+   <div class="container">
+    <h1 style="color:rgba(5, 15, 104, 0.9); text-align: center;margin-top: 50px;">LOGIN</h1>
+       <div class="row">
+           
+           <div class="container-fluid col-md-6 position-relative" style="background-color: rgb(226, 116, 140);border-radius: 20px;box-shadow: 10px 10px 20px rgba(29, 59, 141, 0.9);padding: 20px;">
+            <form id="form" method="POST" action="/">
+                <div class="mb-3">
+                  <label for="user" class="form-label">Userame</label>
+                  <input type="text" class="form-control" name="fName" id="user">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="letmein" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="letmein" name="password">
+                </div>
+              
+              
+                <input  class="btn btn-primary" type="submit" value="submit" style="border-radius: 7px; width: 120px; " onclick="validate()">
+                <pre style="display: inline-block;">                                     </pre>
+                <a href="/signup">New User ?</a>
+              </form>
+
+           </div>
+       </div>
+   </div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    
+    
+  </body>
+</html>
+
+
+<!DOCTYPE html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Registration</title>
+	<link rel="icon" type="image/x-icon" href="./BG.png">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm&family=Comforter+Brush&family=Concert+One&family=Cookie&family=Dancing+Script:wght@500&family=Graduate&family=Lobster&family=Monoton&family=Playball&family=Satisfy&family=Ultra&display=swap" rel="stylesheet">
+<style>@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  body{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .wrapper{
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 60px 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+  }
+  
+  .wrapper .title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    color: #9b0f30;
+    font-family: 'Monoton', cursive;
+  }
+  
+  .wrapper .form1 .input_field{
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .wrapper .form1 .input_field .input{
+    width: 100%;
+    padding: 12px;
+    padding-left: 30px;
+    border: none;
+    background: #eeeeee;
+    border-radius: 10px;
+  }
+  ::placeholder { 
+      color:black;
+      font-size: 15px;
+    }
+  
+  .wrapper .form1 .btn{
+    width: 70%;
+    margin: 20px auto 0;
+    background: #5c36f5;
+    text-align: center;
+    padding: 12px;
+    border-radius: 25px;
+  }
+  
+  .wrapper .form1 .btn a{
+    color: #fff;
+  }
+  
+  .wrapper .form1 .input_field i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #1d2120;
+  }</style>
+</head>
+<body>
+<img src="http://chitrahandicraft.com/wp-content/uploads/2019/02/login-page-background-images-hd-10.jpg" style="width: 100%;">
+<div class="wrapper">
+  <div class="title">
+    Login
+  </div>
+ 
+  
+  <div class="form1">
+    <form id="form" method="POST" action="/">
+    <div class="input_field">
+      <input type="text" placeholder="Username" class="input" autocomplete="off" name="name" id="user"> 
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="input_field">
+      <input type="password" placeholder="Password" class="input" name="password" id="letmein">
+      <i class="fas fa-eye"></i>
+    </div>
+    
+    <input  class="btn" type="submit" value="Login" style="border-radius: 7px; width: 120px; align-items: center;" onclick="validate()">
+    </div>
+    </form>
+    <br>
+    <p style="color:blue">Not a register user? <a href="/registers" style="color:red">Sign Up</a></p>
+  </div>
+</div>	
+	
+</body>
+</html>
