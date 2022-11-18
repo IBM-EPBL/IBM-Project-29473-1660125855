@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>IBM Inventory</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm&family=Comforter+Brush&family=Concert+One&family=Cookie&family=Dancing+Script:wght@500&family=Graduate&family=Lobster&family=Monoton&family=Playball&family=Satisfy&family=Ultra&display=swap" rel="stylesheet">
+<style>@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    body{
+     
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+    
+    .wrapper{
+      max-width: 550px;
+      width: 100%;
+      height: auto;
+      background: white;
+      padding: 60px 45px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 20px;
+    }
+    
+    .wrapper .title{
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 33px;
+      font-weight: bold;
+      color: #9b0f30;
+      font-family: 'Monoton', cursive;
+    }
+    
+    .wrapper .form .input_field{
+      position: relative;
+      margin-bottom: 30px;
+    }
+    
+    .wrapper .form .input_field .input{
+      width: 100%;
+      padding: 12px;
+      padding-left: 30px;
+      border: none;
+      background: #eeeeee;
+      border-radius: 10px;
+    }
+    ::placeholder { 
+        color:black;
+        font-size: 15px;
+      }
+    
+    .wrapper .form .btn{
+      width: 70%;
+      margin: 20px auto 0;
+      background: #5c36f5;
+      text-align: center;
+      padding: 12px;
+      border-radius: 25px;
+    }
+    
+    .wrapper .form .btn a{
+      color: #fff;
+    }
+    
+    .wrapper .form .input_field i{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 14px;
+      color: #1d2120;
+    }</style>
+</head>
+<body>
+    <img src="http://chitrahandicraft.com/wp-content/uploads/2019/02/login-page-background-images-hd-10.jpg" style="width: 100%;">
+<div class="wrapper">
+  <div class="title">
+    Register Here
+  </div>
+  <!--<div class="social_media">
+    <div class="item">
+      <i class="fab fa-facebook-f"></i>
+    </div>
+    <div class="item">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="item">
+      <i class="fab fa-google-plus-g"></i>
+    </div>
+  </div>-->
+  
+  <div class="form">
+    <form id="form" method="POST" action="/registers">
+    <div class="input_field">
+      <input type="text" placeholder="First Name" class="input" name="name" id="name">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="input_field">
+      <input type="text" placeholder="Last Name" class="input" name="lastname" id="lastname">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="input_field">
+      <input type="text" placeholder="Email" class="input" name="gmail" id="gmail">
+      <i class="far fa-envelope"></i>
+    </div>
+    <div class="input_field">
+      <input type="text" placeholder="Phone Number" class="input" name="ph_no" id="ph_no">
+      <i class="fas fa-phone"></i>
+    </div> 
+    <div class="input_field">
+        <input type="password" placeholder="password" class="input" name="password" id="password">
+        <i class="far fa-eye"></i>
+    </div>
+    <div class="input_field">
+      <input type="confirm_password" placeholder="confirm_password" class="input" name="confirm_password" id="confirm_password">
+      <i class="far fa-eye"></i>
+  </div>
+      <input  class="btn btn-primary" type="submit" value="submit" style="border-radius: 7px; width: 120px; " onclick="validate()">
+      <pre style="display: inline-block;"></pre>
+    </form>
+  </div>
+</div>	
+	
+</body>
+</html>
